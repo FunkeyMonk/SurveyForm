@@ -1,0 +1,39 @@
+h1, p{
+    margin: auto;
+    font-family: sans-serif;
+    display: block;
+    max-width: 450px;
+    min-width: 400px;
+  }
+  form{
+    margin: auto;
+    font-family: sans-serif;
+    display: block;
+    background-color: rgba(30,30,30,0.1);
+    max-width: 450px;
+    min-width: 400px;
+  }
+  h3, h1, p{
+    text-align: center;
+  }
+  input[type="number"]{
+    width: 110;
+  }
+  textarea{
+    width: 400px;
+    margin: 0 5%;
+    height: 100px;
+  }
+  label{
+    margin: 10px;
+  }
+  .icecream{
+    margin: 0 30%;
+  }
+  .pets{
+    margin: 0 35%;
+  }
+  .submitButton{
+    width: 200px;
+    margin: 0 42%;
+  }
