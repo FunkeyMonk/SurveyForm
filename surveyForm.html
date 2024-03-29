@@ -3,22 +3,39 @@
   <head>
     <h1 id="title">Survey Form</h1>
     <p id="description">Fill out this survey for funsies!</p>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <form id="survey-form">
     <h3>User Info:</h3>
-    <label>Name:
-      <input id="name" type="text" placeholder="John Smith" required/>
-      <br><label id="name-label">Type your name here</label>
+    <label
+      >Name:
+      <input id="name" type="text" placeholder="John Smith" required />
+      <br /><label id="name-label">Type your name here</label>
     </label>
-    <br><br><label>Email:
-      <input id="email" type="email" placeholder="johnsmith@gmail.com" required/>
-      <br><label id="email-label">Type your email here</label>
+    <br /><br /><label
+      >Email:
+      <input
+        id="email"
+        type="email"
+        placeholder="johnsmith@gmail.com"
+        required
+      />
+      <br /><label id="email-label">Type your email here</label>
     </label>
-    <br><br><label>Phone Number (numbers only):
-      <input id="number" type="number" min="9" max="10" placeholder="12345678901" required/>
-      <br><label id="number-label">Type your phone number here</label>
+    <br /><br /><label
+      >Phone Number (numbers only):
+      <input
+        id="number"
+        type="number"
+        min="1"
+        max="10000000000"
+        placeholder="12345678901"
+        required
+      />
+      <br /><label id="number-label">Type your phone number here</label>
     </label>
-    <br><br><label>What is Your Gender?
+    <br /><br /><label
+      >What is Your Gender?
       <select id="dropdown">
         <option>Prefer not to say</option>
         <option>Male</option>
@@ -26,23 +43,20 @@
       </select>
     </label>
     <h3>Favorite Icecream:</h3>
-    <label>
-      <input type="radio" name="icecream" value="0" checked/>Vanilla
-    </label>
-    <label>
-      <input type="radio" name="icecream" value="1"/>Chocolate
-    </label>
+    <div class="icecream">
+      <input class="ip" type="radio" name="icecream" value="0" checked />Vanilla
+      <input class="ip" type="radio" name="icecream" value="1" />Chocolate
+    </div>
     <h3>What pets do you have?</h3>
-    <label>
-      <input type="checkbox" name="cb" value="dog"/> Dog
-    </label>
-    <label>
-      <input type="checkbox" name="cb" value="cat"/> Cat
-    </label>
+    <div class="pets">
+      <input class="ip" type="checkbox" name="cb" value="dog" /> Dog
+      <input class="ip" type="checkbox" name="cb" value="cat" /> Cat
+    </div>
     <h3>Write about yourself:</h3>
-      <textarea placeholder="I am so cool!."/></textarea>
-    <br><label>
-      <input type="submit" id="submit"/>
-    </label>
+    <textarea class="ip" placeholder="I am so cool!."></textarea>
+    <br />
+    <div class="submitButton">
+      <input class="submit" type="submit" id="submit" />
+    </div>
   </form>
 </html>
